@@ -3,11 +3,13 @@
 {% block content %}
   <p>Uploaded files:</p>
   <ul>
-    {% for result in results %}
-      <li>
-        <a href="/media/{{ result.name }}">{{ result.name }}</a>
-        <small>(Uploaded at: {{ result.register_date }})</small>
-      </li>
-    {% endfor %}
+    {% if results %}
+      {% for result in results %}
+        <li>
+          <a href="/media/{{ result.name }}">{{ result.name }}</a>
+          <small>(Uploaded at: {{ result.register_date }})</small>
+        </li>
+      {% endfor %}
+    {% endif %}
   </ul>
 {% endblock %}
