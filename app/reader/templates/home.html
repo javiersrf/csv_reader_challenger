@@ -1,21 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <ul>
-    <li>
-      <a href="{% url 'upload' %}">Upload your file</a>
-    </li>
-    <li>
-      <a href="{% url 'index' %}">Stay here!</a>
-    </li>
-  </ul>
-
   <p>Uploaded files:</p>
   <ul>
-    {% for obj in documents %}
+    {% for result in results %}
       <li>
-        <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
-        <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+        <a href="/media/{{ result.name }}">{{ result.name }}</a>
+        <small>(Uploaded at: {{ result.register_date }})</small>
       </li>
     {% endfor %}
   </ul>
