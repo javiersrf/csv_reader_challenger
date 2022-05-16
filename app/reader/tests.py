@@ -23,10 +23,11 @@ class UploadControllerTestCase(TestCase):
         """
         data_mock = str.encode(data_mock)
         self.data = BytesIO(data_mock)
+        
     def test_get_registers(self):
         self.data.seek(0)
         response = upload_controller.normalize_data(self.data)
-        assert response["total"] >0
-        assert response["quantity"] >0
-        assert len(response["providers"]) > 0
-        assert len(response["registers"]) > 0
+        self.assertGreater(response["total"],0)
+        self.assertGreater(response["quantity"],0)
+        self.assertGreater(len(response["providers"]),0)
+        self.assertGreater(len(response["registers"]),0)
