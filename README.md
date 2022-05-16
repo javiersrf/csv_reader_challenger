@@ -9,7 +9,8 @@ somiplify the dada inside to adequate in database (sqlite3) formater.
 - The application is set tu port 65501 but can be change in docker-compose file
 
 The Challenge command (portuguese and english):
--> pt-br
+- pt-br
+
 Você recebeu um arquivo de texto com os dados de vendas da empresa. Precisamos criar uma maneira para que estes dados sejam importados para um banco de dados.
 
 Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize os dados e armazene-os no banco de dados.
@@ -25,7 +26,8 @@ Utilizar apenas linguagens e bibliotecas livres ou gratuitas.
 Ter testes de model e controller automatizados.
 Ter uma boa aparência e ser fácil de usar.
     
--> en-US
+- en-US
+
 You have received a text file with the company's sales data. We need to create a way for this data to be imported into a database.
 
 Your task is to create a web interface that accepts file uploads, normalizes the data and stores it in the database.
