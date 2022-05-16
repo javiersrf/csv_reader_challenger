@@ -1,0 +1,2 @@
+./app/csvreader/media/*
+*.sqlite3
